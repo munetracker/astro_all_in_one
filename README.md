@@ -17,9 +17,17 @@ react
 vue
 
 
+-astro in netlify
+https://docs.astro.build/en/guides/deploy/netlify/
+npx astro add netlify
+
+
 -tutorial
 -adding react, vue, svelte in astro
 https://dev.to/fabiobiondi/astro-build-how-to-use-react-vue-and-svelte-in-the-same-page-using-islands-1il4
+
+
+
 
 
 

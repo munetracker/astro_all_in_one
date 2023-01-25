@@ -13,6 +13,12 @@ import react from "@astrojs/react";
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
+// import netlify from "@astrojs/netlify/functions";
+import netlify from '@astrojs/netlify/edge-functions';
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), svelte(), react(), vue()]
+  integrations: [tailwind(), svelte(), react(), vue()],
+  output: "server",
+  adapter: netlify()
 });
