@@ -1,0 +1,11 @@
+---
+export interface Props {
+    title: string;
+    icon?: string;
+}
+const { title, icon } = Astro.props;
+---
+<div>
+    {title} {icon}
+</div>
+<slot />

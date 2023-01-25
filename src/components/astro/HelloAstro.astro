@@ -1,0 +1,52 @@
+---
+import HelloReact from '../react/HelloReact';
+import HelloVue from '../vue/HelloVue.vue';
+import HelloSvelte from '../svelte/HelloSvelte.svelte';
+---
+
+<div>
+	<div class="w-4/5 mx-auto">
+		<h1 class="mt-32 text-6xl font-bold text-white">
+			Welcome Friends
+		</h1>
+	</div>
+	<div class="w-4/5 mx-auto my-10">
+		<h3 class="text-gray-300">
+			Lets Build Stuffs in
+			<strong class="text-white">React, Svelte, Vue</strong>
+			in One Repo
+		</h3>
+	</div>
+	
+	<!-- React -->
+	<div class="grid grid-cols-4 gap-4 mb-5">
+		<div class="col-span-1 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+			React
+		</div>
+		<div class="col-span-3 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+			<HelloReact client:visible/> 
+		</div>
+	</div>
+
+	<!-- Vue -->
+	<div class="grid grid-cols-4 gap-4 mb-5">
+		<div class="col-span-1 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+			Vue
+		</div>
+		<div class="col-span-3 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+			<HelloVue client:visible/>
+		</div>
+	</div>
+
+	<!-- Svelte -->
+	<div class="grid grid-cols-4 gap-4 mb-5">
+		<div class="col-span-1 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+			Svelte
+		</div>
+		<div class="col-span-3 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+			<HelloSvelte client:load/>
+		</div>
+	</div>
+</div>
+
+

@@ -1,0 +1,32 @@
+---
+import DefaultLayout from './../../layouts/Default.astro';
+import HelloReact from './../../components/react/HelloReact';
+let title:string = "React";
+---
+<DefaultLayout title={`- ${title}`}>
+	<div>
+		<div class="w-4/5 mx-auto mb-3">
+			<h1 class="mt-32 text-6xl font-bold text-white">
+				Friends Lets Build <strong class="text-white">{title}</strong>
+			</h1>
+		</div>
+
+		<div class="grid grid-cols-4 gap-4 mb-5">
+			<div class="col-span-1 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+				{title}
+			</div>
+			<div class="col-span-3 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+				<HelloReact client:visible/> 
+			</div>
+		</div>
+		<div class="grid grid-cols-4 gap-4 mb-5">
+			<div class="col-span-1 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+				12312asdasd3515asdasd
+			</div>
+			<div class="col-span-3 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
+				<HelloReact client:visible/> 
+			</div>
+		</div>
+	</div>
+</DefaultLayout>
+
