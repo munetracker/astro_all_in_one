@@ -1,6 +1,7 @@
 ---
 import DefaultLayout from './../../layouts/Default.astro';
 import HelloReact from './../../components/react/HelloReact';
+import W3Schools from '../../components/react/W3Schools';
 let title:string = "React";
 ---
 <DefaultLayout title={`- ${title}`}>
@@ -21,10 +22,10 @@ let title:string = "React";
 		</div>
 		<div class="grid grid-cols-4 gap-4 mb-5">
 			<div class="col-span-1 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
-				12312asdasd3515asdasd
+				W3Schools
 			</div>
 			<div class="col-span-3 p-4 text-white bg-black shadow-lg rounded-2xl md:p-10">
-				<HelloReact client:visible/> 
+				<W3Schools client:visible/> 
 			</div>
 		</div>
 	</div>
